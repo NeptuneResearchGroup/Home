@@ -54,25 +54,47 @@
               background-repeat: no-repeat;
               background-size: cover;
             }
-        img{
-                 width:2in;
-                 height: 2in;
+            .dropbtn {
+                 background-color: transparent;
+                 padding: 0px;
+                 border: none;
              }
+             .dropdown {
+                 text-align:left;
+                 margin-left:.3in;
+                 margin-top: .3in;
+                 position: relative;
+                 display: block;             
+             }
+             .dropdown-content {
+                 display: none;
+                 position: absolute;
+                 background-color: transparent;
+                 min-width: 160px;
+                 box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                 z-index: 1;
+             }
+             .dropdown-content a {
+                 color: black;
+                 padding: 12px 16px;
+                 text-decoration: none;
+                 display: block;
+             }
+             .dropdown-content a:hover {background-color: powderblue;}
+             .dropdown:hover .dropdown-content {display: block;}
+             .dropdown:hover .dropbtn {background-color: powderblue;}
     </style>
     <body>
-        <img src="clearlogo.png" alt="logo">
+        <img src="clearlogo.png" alt="logo" width="198" height="198"/>
         <div class = "Title">
             <h1>Neptune Research Group</h1>
         </div>
-        <div class= "fr">  
-         <h2>
-            <a href="https://neptuneresearchgroup.github.io/HealthMonitoringStation/"> About Us </a>
-         </h2>
-        </div>
-        <div class="About">
-            <h2> Health Monitoring Stations </h3>
-        </div>
-        <div class = "atext">
-            <a href="https://neptuneresearchgroup.github.io/HealthMonitoringStation/Data.html"> Savannah River (mouth) </a>
+        <div class= "dropdown">
+            <button class="dropbtn"><img src="menu.png" alt="menuIcon" width="100" height= "100"/></button>
+                  <div class="dropdown-content">
+                       <a href="https://neptuneresearchgroup.github.io/Home/">Home</a>
+                       <a href="https://neptuneresearchgroup.github.io/HealthMonitoringStation/">About Us</a>
+                       <a href="https://neptuneresearchgroup.github.io/HealthMonitoringStation/Data.html">Data</a>
+                  </div>
         </div>
     </body>
